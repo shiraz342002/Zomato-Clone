@@ -1,5 +1,5 @@
 import React from 'react'
-import PlacesCard from '../Utils/Cards/PlacesCards'
+import PlacesCard from '../../Utils/Cards/PlacesCards'
 
 const Popular = () => {
   return (

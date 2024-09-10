@@ -1,10 +1,12 @@
 import React from 'react'
-import HomeBanner from './components/HomeBanner'
-import SmallCard from './components/Card'
+import HomeBanner from './components/HomeComponents/HomeBanner.jsx'
+import SmallCard from './components/HomeComponents/Card.jsx'
 import orderOnlineImg from '/images/orderonline.jpg'
 import diningoutImg from '/images/diningout.jpg'
-import Popular from './components/Popular.jsx'
-import GetTheApp from './components/GetTheApp.jsx'
+import Popular from './components/HomeComponents/Popular.jsx'
+import GetTheApp from './components/HomeComponents/GetTheApp.jsx'
+import CollapsibleCards from './components/HomeComponents/CollapsibleCards.jsx'
+import Footer from './components/Footer/Footer.jsx'
 const App = () => {
   return (
     <>
@@ -27,6 +29,8 @@ const App = () => {
         <Popular/>
       </div>
       <GetTheApp/>
+      <CollapsibleCards/>
+      <Footer/>
     </>
   )
 }
