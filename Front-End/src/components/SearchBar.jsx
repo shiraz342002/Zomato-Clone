@@ -5,7 +5,7 @@ import searchIcon from '../assets/icons/search.png';
 
 const SearchBar = () => {
   return (
-    <div className="w-[38%] h-[50px] p-2 rounded-lg border border-gray-300 shadow-lg bg-white flex items-center justify-center relative">
+    <div className="w-[38%] h-[50px] p-2 mt-4 rounded-lg border border-gray-300 shadow-lg bg-white flex items-center justify-center relative">
       <div className="flex items-center w-[30%]">
         <div className="w-6 h-6 flex items-center justify-center">
           <img className="w-5 h-5" src={locationIcon} alt="location pointer" />

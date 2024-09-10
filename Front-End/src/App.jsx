@@ -3,6 +3,8 @@ import HomeBanner from './components/HomeBanner'
 import SmallCard from './components/Card'
 import orderOnlineImg from '/images/orderonline.jpg'
 import diningoutImg from '/images/diningout.jpg'
+import Popular from './components/Popular.jsx'
+import GetTheApp from './components/GetTheApp.jsx'
 const App = () => {
   return (
     <>
@@ -22,7 +24,9 @@ const App = () => {
             additionalText={"Check out our best resturant that offers dine out"}
           />
         </div>
+        <Popular/>
       </div>
+      <GetTheApp/>
     </>
   )
 }
