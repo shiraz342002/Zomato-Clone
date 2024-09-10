@@ -17,7 +17,7 @@ const CollapsibleCard = ({ title, content }) => {
                 <span
                     className={`ml-2 transition-transform duration-300 ${isOpen ? 'rotate-180' : 'rotate-0'}`}
                 >
-                    &#9662;
+                    &#9662; 
                 </span>
             </button>
             <div
@@ -34,7 +34,7 @@ const CollapsibleCard = ({ title, content }) => {
 const CollapsibleCards = () => {
     return (
         <div className="p-4 mt-[4rem]">
-            <h2 className="text-3xl font-bold mb-6 flex justify-start ml-56">
+            <h2 className="text-3xl font-bold mb-6 flex justify-center">
                 Explore options near me
             </h2>
             <CollapsibleCard
