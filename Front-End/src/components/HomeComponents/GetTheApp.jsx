@@ -3,8 +3,8 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import mobileImg from '/images/mobile.png';
-import playstoreImg from '/icons/appstore.png';
-import appstoreImg from '/icons/playstore.png';
+import playstoreImg from '/icons/playstore.png';
+import appstoreImg from '/icons/appstore.png';
 
 const GetTheApp = () => {
     const [inputType, setInputType] = useState(true);
@@ -19,14 +19,14 @@ const GetTheApp = () => {
     };
 
     return (
-        <div className="w-full h-[30rem] bg-[#fffbf7] flex justify-center items-center mt-[3rem] px-4">
-            <div className="w-full max-w-[1200px] flex justify-center">
-                <div className="flex-1 flex justify-center items-center">
-                    <img className="w-[260px] h-[280px]" src={mobileImg} alt="mobile img" />
+        <div className="w-full bg-[#fffbf7] flex flex-col lg:flex-row justify-center items-center py-8 px-4">
+            <div className="w-full max-w-[1200px] flex flex-col lg:flex-row">
+                <div className="flex-1 flex justify-center items-center mb-8 lg:mb-0">
+                    <img className="w-full max-w-[260px] h-auto" src={mobileImg} alt="mobile img" />
                 </div>
-                <div className="flex-1 px-8">
-                    <div className="text-3xl font-semibold mb-2">Get the Tomato App</div>
-                    <div className="text-base font-light mb-4 leading-6">
+                <div className="flex-1 px-4 lg:px-8">
+                    <div className="text-2xl lg:text-3xl font-semibold mb-2">Get the Tomato App</div>
+                    <div className="text-base lg:text-lg font-light mb-4 leading-6">
                         We will send you a link, open it on your phone to download the app
                     </div>
                     <div className="mb-4">
@@ -75,10 +75,10 @@ const GetTheApp = () => {
                         </div>
                     </div>
                     <div className="my-8">
-                        <div className="text-base font-light mb-4 text-gray-700">Download app from</div>
+                        <div className="text-base lg:text-lg font-light mb-4 text-gray-700">Download app from</div>
                         <div className="flex flex-wrap justify-center gap-4">
-                            <img className="w-[150px] h-[40px] rounded-lg cursor-pointer" src={appstoreImg} alt="appstore" />
-                            <img className="w-[150px] h-[40px] rounded-lg cursor-pointer" src={playstoreImg} alt="playstore" />
+                            <img className="w-[130px] h-auto rounded-lg cursor-pointer" src={appstoreImg} alt="appstore" />
+                            <img className="w-[130px] h-auto rounded-lg cursor-pointer" src={playstoreImg} alt="playstore" />
                         </div>
                     </div>
                 </div>
