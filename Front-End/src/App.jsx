@@ -1,6 +1,6 @@
 import React from 'react'
 import HomeBanner from './components/HomeComponents/HomeBanner.jsx'
-import SmallCard from './Utils/Cards/HomeCard.jsx'
+import SmallCard from './components/Cards/HomeCard.jsx'
 import orderOnlineImg from '/images/orderonline.jpg'
 import diningoutImg from '/images/diningout.jpg'
 import Popular from './components/HomeComponents/Popular.jsx'

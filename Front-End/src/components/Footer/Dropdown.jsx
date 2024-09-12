@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Dropdown.css'; // Make sure to import the CSS file
+import './Dropdown.css';
 
 const Dropdown = ({ options, selected, onSelect }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +8,6 @@ const Dropdown = ({ options, selected, onSelect }) => {
         onSelect(option);
         setIsOpen(false);
     };
-
     return (
         <div className="relative">
             <button

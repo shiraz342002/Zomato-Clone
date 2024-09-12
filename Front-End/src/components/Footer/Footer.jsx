@@ -12,10 +12,8 @@ import Dropdown from './Dropdown';
 const Footer = () => {
     const [country, setCountry] = useState('India');
     const [language, setLanguage] = useState('English');
-
     const countries = ['India', 'USA', 'UK', 'Canada', 'Australia'];
     const languages = ['English', 'Spanish', 'French', 'German', 'Chinese'];
-
     return (
         <div className="w-full bg-gray-100 py-8 px-16">
             <div className="max-w-6xl mx-auto">
@@ -28,7 +26,7 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-wrap justify-between mb-6">
                     <div className="w-full md:w-1/5 mb-4 md:mb-0">
-                        <div className="font-semibold mb-2 tracking-wider">ABOUT TOMATO</div>
+                        <div className="font-semibold mb-2 tracking-wider">ABOUT Zomato</div>
                         <a href="#" className="block text-gray-600 text-sm mb-1">Who We Are</a>
                         <a href="#" className="block text-gray-600 text-sm mb-1">Blog</a>
                         <a href="#" className="block text-gray-600 text-sm mb-1">Work With Us</a>
@@ -36,20 +34,20 @@ const Footer = () => {
                         <a href="#" className="block text-gray-600 text-sm">Report Fraud</a>
                     </div>
                     <div className="w-full md:w-1/5 mb-4 md:mb-0">
-                        <div className="font-semibold mb-2 tracking-wider">TOMAVERSE</div>
+                        <div className="font-semibold mb-2 tracking-wider">Zomatoverse</div>
                         <a href="#" className="block text-gray-600 text-sm mb-1">Tomato</a>
                         <a href="#" className="block text-gray-600 text-sm mb-1">Feeding India</a>
                         <a href="#" className="block text-gray-600 text-sm mb-1">Hyperpure</a>
-                        <a href="#" className="block text-gray-600 text-sm">Tomaland</a>
+                        <a href="#" className="block text-gray-600 text-sm">ZomatoLand</a>
                     </div>
                     <div className="w-full md:w-1/5 mb-4 md:mb-0">
                         <div className="font-semibold mb-2 tracking-wider">FOR RESTAURANTS</div>
                         <a href="#" className="block text-gray-600 text-sm mb-1">Partner With Us</a>
                         <a href="#" className="block text-gray-600 text-sm mb-1">Apps For You</a>
                         <div className="font-semibold mt-4 mb-2 tracking-wider">FOR ENTERPRISES</div>
-                        <a href="#" className="block text-gray-600 text-sm">Tomato For Work</a>
+                        <a href="#" className="block text-gray-600 text-sm">Zomato For Work</a>
                     </div>
-                
+
                     <div className="w-full md:w-1/5 mb-4 md:mb-0">
                         <div className="font-semibold mb-2 tracking-wider">LEARN MORE</div>
                         <a href="#" className="block text-gray-600 text-sm mb-1">Privacy</a>
@@ -84,11 +82,9 @@ const Footer = () => {
                         </a>
                     </div>
                 </div>
-
-             
                 <hr className="my-6 border-t border-gray-300" />
                 <div className="text-gray-600 text-sm text-justify">
-                By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2024 © Zomato™ Ltd. All rights reserved.
+                    By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2024 © Zomato™ Ltd. All rights reserved.
                 </div>
             </div>
         </div>

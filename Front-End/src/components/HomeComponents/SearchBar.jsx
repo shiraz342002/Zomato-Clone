@@ -31,10 +31,8 @@ const SearchBar = () => {
           className="w-[95%] mx-2 p-2 text-sm border-none outline-none text-gray-600 placeholder-gray-400"
         />
       </div>
-      {/* Dropdown Box */}
       <div className="absolute top-[65px] left-0 w-full h-[300px] overflow-y-scroll bg-white rounded-lg border border-gray-300 hidden">
         <div className="dropdown">
-          {/* Dropdown content here */}
         </div>
       </div>
     </div>
