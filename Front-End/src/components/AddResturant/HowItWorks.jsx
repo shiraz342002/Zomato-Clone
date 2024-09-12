@@ -8,7 +8,7 @@ import HowItWorksCard from '../Cards/HowItWorksCard';
 
 const HowItWorks = () => {
   return (
-    <div className="w-full h-auto my-4 mb-[10rem] relative">
+    <>    <div className="w-full h-auto my-4 relative">
       <div className="w-full h-full flex justify-center items-center relative">
         <div className="w-full h-full absolute inset-0">
           <img className="w-full h-full object-cover" src={backgroundImg} alt="background image" />
@@ -23,6 +23,8 @@ const HowItWorks = () => {
         </div>
       </div>
     </div>
+    </>
+
   );
 };
 
