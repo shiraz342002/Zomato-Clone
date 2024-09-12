@@ -32,7 +32,7 @@ const AddResturantNavbar = () => {
         >
 
           <li className="my-2 md:my-0 px-4 w-full md:w-auto">
-            <Link to="/signup" className="block">Advertise</Link>
+            <Link to="/signup" className="block">Sign up</Link>
           </li>
           <li className="my-2 md:my-0 px-4 w-full md:w-auto">
             <Link to="/login" className="block">Log In</Link>

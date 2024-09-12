@@ -15,14 +15,14 @@ const App = () => {
         <div className='flex flex-wrap items-center justify-center'>
           <SmallCard
             imgSrc={orderOnlineImg}
-            text={"Order Online"}
-            link={"orderonline"}
+            text={"OrderOnline"}
+            link={"showcase"}
             additionalText={"Stay home and order at your doorstep"}
           />
           <SmallCard
             imgSrc={diningoutImg}
-            text={"Order Online"}
-            link={"Dining Out"}
+            text={"Dining"}
+            link={"showcase"}
             additionalText={"Check out our best resturant that offers dine out"}
           />
         </div>
