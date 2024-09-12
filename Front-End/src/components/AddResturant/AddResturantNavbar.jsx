@@ -61,9 +61,9 @@ const AddResturantNavbar = () => {
           </div>
           <p className='flex items-start'>Need help? Contact +91 97-38-38-38-38</p>
         </div>
-
-        <div className="flex justify-center items-center h-[300px] bg-gray-50">
-          <div className="w-[700px] bg-white p-8 shadow-lg rounded-xl mb-[80px]">
+</div>
+        <div className="flex justify-center items-center h-[300px] relative bottom-7 bg-gray-50">
+          <div className="w-[700px] bg-white p-8 shadow-lg rounded-xl mb-[70px]">
             <h2 className=" font-semibold mb-4 text-center text-4xl">Get started with online ordering</h2>
             <p className="mb-4 text-center text-1xl">Please keep the documents ready for a smooth signup</p>
             <div className="flex justify-between font-semibold text-xl">
@@ -102,7 +102,7 @@ const AddResturantNavbar = () => {
         </div>
 
 
-      </div>
+      
     </>
   )
 }
