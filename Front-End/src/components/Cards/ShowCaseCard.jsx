@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
-import biryani from '../../assets/images/profilebanner.jpg';
 import upArrowIcon from '../../assets/icons/up-arrow-icon.png';
 import maxSAfety from '../../assets/icons/maxsafty.png';
-import safeDelivery from '../../assets/icons/safe-delivery.png';
 import star from '../../assets/icons/star.png';
 
 const ShowCaseCard = (props) => {

@@ -9,7 +9,7 @@ import dining2 from '../assets/icons/dinning1.png';
 import delivery1 from '../assets/icons/delivery2.png';
 import delivery2 from '../assets/icons/delivery1.png';
 import { useNavigate } from 'react-router-dom';
-
+import filter from "../assets/icons/filter.png"
 
 
 
@@ -36,10 +36,7 @@ import icecreamImg from '../assets/images/Food/icecream.png';
 import kfcSCImg from '../assets/images/Food/kfc.png';
 import pizzaSCImg from '../assets/images/Food/pizza.png';
 import ShowCaseCard from '../components/Cards/ShowCaseCard';
-import FreqQuestion from '../components/Cards/FreqQuestion';
-import FrequentlyAsked from '../components/AddResturant/FrequentlyAsked';
 import ExploreOptions from '../components/ShowCase/ExploreOptions';
-import CircleCard2 from '../components/Cards/CircleCard2.jsx';
 import CircleCard1 from '../components/Cards/CircleCard1.jsx';
 import ErrorBoundary from '../components/ErrorBoundary.jsx';
 
@@ -151,7 +148,7 @@ const DiningOutComponent = () => {
     <>
     <div className='flex flex-row gap-3 justify-start relative bottom-4 items-center'>
     
-        <span className='text-gray-400 border px-4 rounded-md py-1 cursor-pointer text-based'>Filters</span>
+        <span className='text-gray-400 border px-4 rounded-md py-1 cursor-pointer text-based'> <img className='inline-block w-5 ' src={filter} alt="" />&nbsp;Filters</span>
         <span className='text-gray-400 border px-4 rounded-md py-1 cursor-pointer text-based'>Offers</span>
         <span className='text-gray-400 border px-4 rounded-md py-1 cursor-pointer text-based'>Rating:4.0</span>
         <span className='text-gray-400 border px-4 rounded-md py-1 cursor-pointer text-based'>Pet Friendly</span>
@@ -374,6 +371,13 @@ const brandsCardScroll = [
   ]
   return (
     <>
+    <div className='flex flex-row gap-3 justify-start relative bottom-4 items-center'>
+    
+    <span className='text-gray-400 border px-4 rounded-md py-1 cursor-pointer text-based'> <img className='inline-block w-5 ' src={filter} alt="" />&nbsp;  Filters</span>
+    <span className='text-gray-400 border px-4 rounded-md py-1 cursor-pointer text-based'>Pure Veg</span>
+    <span className='text-gray-400 border px-4 rounded-md py-1 cursor-pointer text-based'>Cusine</span>
+    
+</div> 
       <div className="w-[70%] mx-auto md:w-full ">
   <div className="text-2xl font-[450] mb-4 text-gray-800">
     Inspiration for your first order
@@ -388,7 +392,6 @@ const brandsCardScroll = [
     </CrousilUtil>
   </div>
 </div>
-
       <div className="w-[70%] mx-auto md:w-full ">
   <div className="text-2xl font-[450] mb-4 text-gray-800">
     Top Brands for you
@@ -426,8 +429,6 @@ const brandsCardScroll = [
     </div>
 </div>
   <ExploreOptions/>
-
-
     </>
   );
 };
