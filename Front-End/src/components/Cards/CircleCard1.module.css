@@ -1,0 +1,46 @@
+.outerDiv {
+    width: 200px; /* Increased width for a more prominent circle */
+    height: 200px; /* Increased height for a more prominent circle */
+    margin: 1rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff; /* Added background color for better visibility */
+    border-radius: 50%; /* Ensures the outer container is circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for a polished look */
+    overflow: hidden; /* Ensures children fit within the circle */
+}
+
+.innerDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgDiv {
+    width: 80%; /* Adjusted size to fit well within the circle */
+    height: 80%;
+    border-radius: 50%; /* Ensures the image container is circular */
+    overflow: hidden; /* Ensures the image fits well */
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    border-radius: 50%; /* Ensures the image is circular */
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem; /* Increased font size for better visibility */
+    font-weight: 500; /* Slightly increased font weight for better emphasis */
+    color: var(--color-title-text);
+    margin-top: 0.5rem; /* Added margin for spacing */
+}

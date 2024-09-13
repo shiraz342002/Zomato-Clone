@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import Footer from "../components/Footer/Footer.jsx"
+import CrousilUtil from "../Utils/CrousilUtil.jsx"
+
 import locpin from '../assets/images/locationPin.png';
 import search from '../assets/icons/search.png';
 import dining1 from '../assets/icons/dinning2.png';
@@ -7,7 +10,143 @@ import delivery1 from '../assets/icons/delivery2.png';
 import delivery2 from '../assets/icons/delivery1.png';
 import { useNavigate } from 'react-router-dom';
 
+
+
+
+import biryaniCImg from '../assets/icons/Food/biryaniC.png';
+import burgerImg from '../assets/icons/Food/burger.png';
+import chickenImg from '../assets/icons/Food/chicken.png';
+import friesImg from '../assets/icons/Food/fries.png';
+import homestyleImg from '../assets/icons/Food/homestyle.png';
+import noodelsImg from '../assets/icons/Food/noodels.png';
+import pannerImg from '../assets/icons/Food/panner.png';
+import pizzaImg from '../assets/icons/Food/pizza.png';
+import sandwichImg from '../assets/icons/Food/sandwich.png';
+import shawarmaImg from '../assets/icons/Food/shawarma.png';
+
+import kfcImg from '../assets/icons/Brands/kfc.png';
+import pizzahutImg from '../assets/icons/Brands/pizzahut.png';
+import scoopsImg from '../assets/icons/Brands/scoops.png';
+
+import biryaniSCImg from '../assets/images/Food/biryani.png';
+import biryaniSCImg2 from '../assets/images/Food/biryani2.png';
+import chapathiImg from '../assets/images/Food/chapathi.png';
+import fishImg from '../assets/images/Food/fish.png';
+import icecreamImg from '../assets/images/Food/icecream.png';
+import kfcSCImg from '../assets/images/Food/kfc.png';
+import pizzaSCImg from '../assets/images/Food/pizza.png';
+import ShowCaseCard from '../components/Cards/ShowCaseCard';
+import FreqQuestion from '../components/Cards/FreqQuestion';
+import FrequentlyAsked from '../components/AddResturant/FrequentlyAsked';
+import ExploreOptions from '../components/ShowCase/ExploreOptions';
+import CircleCard2 from '../components/Cards/CircleCard2.jsx';
+import CircleCard1 from '../components/Cards/CircleCard1.jsx';
+import ErrorBoundary from '../components/ErrorBoundary.jsx';
+
+
 const DiningOutComponent = () => {
+  
+    const items = [
+      {
+          promoted: true,
+          time: "25",
+          offB: true,
+          proExtraB: false,
+          off: "30",
+          proExtra: "40",
+          name: "Paradise Hotel",
+          rating: '3.6',
+          imgSrc: biryaniSCImg
+      },
+      {
+          promoted: false,
+          time: "25",
+          offB: true,
+          proExtraB: false,
+          off: "30",
+          proExtra: "40",
+          name: "Mangal Hotel",
+          rating: '2.6',
+          imgSrc: biryaniSCImg2
+      },
+      {
+          promoted: true,
+          time: "30",
+          offB: false,
+          proExtraB: true,
+          off: "30",
+          proExtra: "40",
+          name: "Chapathi Hotel",
+          rating: '4.6',
+          imgSrc: chapathiImg
+      },
+      {
+          promoted: false,
+          time: "25",
+          offB: true,
+          proExtraB: false,
+          off: "30",
+          proExtra: "40",
+          name: "Fish Mandi Hotel",
+          rating: '4.9',
+          imgSrc: fishImg
+      },
+      {
+          promoted: true,
+          time: "25",
+          offB: false,
+          proExtraB: true,
+          off: "30",
+          proExtra: "40",
+          name: "MangalCaptain Hotel",
+          rating: '4.6',
+          imgSrc: icecreamImg
+      },
+      {
+          promoted: false,
+          time: "25",
+          offB: true,
+          proExtraB: false,
+          off: "30",
+          proExtra: "40",
+          name: "KFCS Hotel",
+          rating: '2.8',
+          imgSrc: kfcSCImg
+      },
+      {
+          promoted: true,
+          time: "25",
+          offB: true,
+          proExtraB: false,
+          off: "30",
+          proExtra: "40",
+          name: "Pizza Hotel",
+          rating: '3.2',
+          imgSrc: pizzaSCImg
+      },
+      {
+          promoted: false,
+          time: "25",
+          offB: true,
+          proExtraB: false,
+          off: "30",
+          proExtra: "40",
+          name: "Fish Mandi Hotel",
+          rating: '4.6',
+          imgSrc: fishImg
+      },
+      {
+          promoted: true,
+          time: "25",
+          offB: false,
+          proExtraB: true,
+          off: "30",
+          proExtra: "40",
+          name: "MangalCaptain Hotel",
+          rating: '2.6',
+          imgSrc: icecreamImg
+      },
+  ]
   return (
     <>
     <div className='flex flex-row gap-3 justify-start relative bottom-4 items-center'>
@@ -26,6 +165,31 @@ const DiningOutComponent = () => {
     <div className='flex justify-start items-center mt-3 '>
         <p className='text-4xl  mt-10 font-bold'>Tredning Resturants in Sri Ganganganagar locality</p>
     </div>
+    
+    <div className="w-full h-full my-4">
+    <div className="mx-auto">
+        <div className="text-2xl font-semibold text-gray-800">
+        </div>
+        <div className="w-full h-auto my-4 flex flex-wrap justify-start">
+            {items?.map((item, id) => (
+                <ShowCaseCard
+                    key={id}
+                    promoted={item.promoted}
+                    time={item.time}
+                    offB={item.offB}
+                    proExtraB={item.proExtraB}
+                    off={item.off}
+                    proExtra={item.proExtra}
+                    name={item.name}
+                    rating={item.rating}
+                    imgSrc={item.imgSrc}
+                />
+            ))}
+        </div>
+    </div>
+</div>
+    <ExploreOptions/>
+    
    
     </>
   );
@@ -33,11 +197,98 @@ const DiningOutComponent = () => {
 
 
 const DeliveryComponent = () => {
+  const foodCardScroll = [
+    {
+        name: "Biryani",
+        imgSrc: biryaniCImg
+    },
+    {
+        name: "Burger",
+        imgSrc: burgerImg
+    },
+    {
+        name: "Chicken",
+        imgSrc: chickenImg
+    },
+    {
+        name: "Fries",
+        imgSrc: friesImg
+    },
+    {
+        name: "Home Style",
+        imgSrc: homestyleImg
+    },
+    {
+        name: "Noodles",
+        imgSrc: noodelsImg
+    },
+    {
+        name: "Panner",
+        imgSrc: pannerImg
+    },
+    {
+        name: "Pizza",
+        imgSrc: pizzaImg
+    },
+    {
+        name: "Sandwich",
+        imgSrc: sandwichImg
+    },
+    {
+        name: "Shawarma",
+        imgSrc: shawarmaImg
+    },
+]
+const brandsCardScroll = [
+        {
+            name: "KFC",
+            imgSrc: kfcImg,
+            time: "45"
+        },
+        {
+            name: "Pizza Hut",
+            imgSrc: pizzahutImg,
+            time: "35"
+        },
+        {
+            name: "Scoops",
+            imgSrc: scoopsImg,
+            time: "49"
+        },
+        {
+            name: "KFC",
+            imgSrc: kfcImg,
+            time: "19"
+        },
+        {
+            name: "Pizza Hut",
+            imgSrc: pizzahutImg,
+            time: "22"
+        },
+        {
+            name: "Scoops",
+            imgSrc: scoopsImg,
+            time: "33"
+        },
+    ]
   return (
-    <div className="p-4 border rounded-lg">
-      <h2 className="text-xl font-semibold">Delivery Options</h2>
-      <p>Find the best delivery options from your favorite restaurants.</p>
-    </div>
+    <>
+      <div className="w-[70%] mx-auto md:w-full ">
+  <div className="text-2xl font-[450] mb-4 text-gray-800">
+    Inspiration for your first order
+  </div>
+  <div className="w-full h-full flex overflow-x-auto md:overflow-hidden">
+    <CrousilUtil>
+      {foodCardScroll?.map((val, id) => (
+        <div className="w-[150px] mx-2" key={id}>
+          <CircleCard1 imgSrc={val.imgSrc} name={val.name} />
+        </div>
+      ))}
+    </CrousilUtil>
+  </div>
+</div>
+
+    </>
   );
 };
 
@@ -63,7 +314,7 @@ const Showcase = () => {
 
   return (
     <>
-    <div className="px-4 sm:px-6 lg:px-6">
+    <div className="">
 
       <nav className="bg-white border-b border-gray-300 shadow-md">
         <div className="max-w-5xl mx-auto px-4 py-2 flex items-center justify-around">
@@ -178,8 +429,15 @@ const Showcase = () => {
      
       <div className="mt-8 ml-64">
         {diningOut && <DiningOutComponent />}
-        {delivery && <DeliveryComponent />}
+        {delivery && 
+        <ErrorBoundary>
+        <DeliveryComponent />
+        </ErrorBoundary>
+        }
         </div>
+      </div>
+      <div className='mt-22'>
+      <Footer/>
       </div>
     </>
 
