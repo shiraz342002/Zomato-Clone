@@ -5,7 +5,7 @@ import star from '../../assets/icons/star.png';
 
 const ShowCaseCard = (props) => {
     const { link2, promoted, time, offB, proExtraB, off, proExtra, name, rating, imgSrc } = props;
-    let link = "/" + "hyderabad/paradise/order";
+    let link = "/resturant";
 
     return (
         <Link to={link} className="block w-full sm:w-[300px] h-auto min-h-[300px] max-h-[450px] m-2 p-3 rounded-lg cursor-pointer no-underline hover:outline hover:outline-4 hover:bg-white hover:shadow-lg">
@@ -51,7 +51,7 @@ const ShowCaseCard = (props) => {
                     <div className="flex items-center mt-2">
                         <img className="w-5 h-5" src={upArrowIcon} alt="up arrow" />
                         <div className="ml-2 text-sm font-medium text-gray-600">9000+ orders placed from here recently</div>
-                        <img className="w-10 h-5 ml-auto" src={maxSAfety} alt="max safety" />
+                        {/* <img className="w-10 h-5 ml-auto" src={maxSAfety} alt="max safety" /> */}
                     </div>
                 </div>
             </div>

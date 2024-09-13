@@ -10,7 +10,7 @@ import delivery1 from '../assets/icons/delivery2.png';
 import delivery2 from '../assets/icons/delivery1.png';
 import { useNavigate } from 'react-router-dom';
 import filter from "../assets/icons/filter.png"
-
+import Questions from "../components/Faq/Questions.jsx"
 
 
 import biryaniCImg from '../assets/icons/Food/biryaniC.png';
@@ -185,7 +185,7 @@ const DiningOutComponent = () => {
         </div>
     </div>
 </div>
-    <ExploreOptions/>
+    <Questions/>
     
    
     </>
@@ -428,7 +428,7 @@ const brandsCardScroll = [
         </div>
     </div>
 </div>
-  <ExploreOptions/>
+  <Questions/>
     </>
   );
 };
