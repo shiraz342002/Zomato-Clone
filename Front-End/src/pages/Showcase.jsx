@@ -271,6 +271,107 @@ const brandsCardScroll = [
             time: "33"
         },
     ]
+    const items = [
+      {
+          promoted: true,
+          time: "25",
+          offB: true,
+          proExtraB: false,
+          off: "30",
+          proExtra: "40",
+          name: "Paradise Hotel",
+          rating: '3.6',
+          imgSrc: biryaniSCImg
+      },
+      {
+          promoted: false,
+          time: "25",
+          offB: true,
+          proExtraB: false,
+          off: "30",
+          proExtra: "40",
+          name: "Mangal Hotel",
+          rating: '2.6',
+          imgSrc: biryaniSCImg2
+      },
+      {
+          promoted: true,
+          time: "30",
+          offB: false,
+          proExtraB: true,
+          off: "30",
+          proExtra: "40",
+          name: "Chapathi Hotel",
+          rating: '4.6',
+          imgSrc: chapathiImg
+      },
+      {
+          promoted: false,
+          time: "25",
+          offB: true,
+          proExtraB: false,
+          off: "30",
+          proExtra: "40",
+          name: "Fish Mandi Hotel",
+          rating: '4.9',
+          imgSrc: fishImg
+      },
+      {
+          promoted: true,
+          time: "25",
+          offB: false,
+          proExtraB: true,
+          off: "30",
+          proExtra: "40",
+          name: "MangalCaptain Hotel",
+          rating: '4.6',
+          imgSrc: icecreamImg
+      },
+      {
+          promoted: false,
+          time: "25",
+          offB: true,
+          proExtraB: false,
+          off: "30",
+          proExtra: "40",
+          name: "KFCS Hotel",
+          rating: '2.8',
+          imgSrc: kfcSCImg
+      },
+      {
+          promoted: true,
+          time: "25",
+          offB: true,
+          proExtraB: false,
+          off: "30",
+          proExtra: "40",
+          name: "Pizza Hotel",
+          rating: '3.2',
+          imgSrc: pizzaSCImg
+      },
+      {
+          promoted: false,
+          time: "25",
+          offB: true,
+          proExtraB: false,
+          off: "30",
+          proExtra: "40",
+          name: "Fish Mandi Hotel",
+          rating: '4.6',
+          imgSrc: fishImg
+      },
+      {
+          promoted: true,
+          time: "25",
+          offB: false,
+          proExtraB: true,
+          off: "30",
+          proExtra: "40",
+          name: "MangalCaptain Hotel",
+          rating: '2.6',
+          imgSrc: icecreamImg
+      },
+  ]
   return (
     <>
       <div className="w-[70%] mx-auto md:w-full ">
@@ -287,6 +388,45 @@ const brandsCardScroll = [
     </CrousilUtil>
   </div>
 </div>
+
+      <div className="w-[70%] mx-auto md:w-full ">
+  <div className="text-2xl font-[450] mb-4 text-gray-800">
+    Top Brands for you
+  </div>
+  <div className="w-full h-full flex overflow-x-auto md:overflow-hidden">
+    <CrousilUtil>
+      {brandsCardScroll?.map((val, id) => (
+        <div className="w-[150px] mx-2" key={id}>
+          <CircleCard1 imgSrc={val.imgSrc} name={val.name} />
+        </div>
+      ))}
+    </CrousilUtil>
+  </div>
+</div>
+  <div className="w-full h-full my-4">
+    <div className="mx-auto">
+        <div className="text-2xl font-semibold text-gray-800">
+        </div>
+        <div className="w-full h-auto my-4 flex flex-wrap justify-start">
+            {items?.map((item, id) => (
+                <ShowCaseCard
+                    key={id}
+                    promoted={item.promoted}
+                    time={item.time}
+                    offB={item.offB}
+                    proExtraB={item.proExtraB}
+                    off={item.off}
+                    proExtra={item.proExtra}
+                    name={item.name}
+                    rating={item.rating}
+                    imgSrc={item.imgSrc}
+                />
+            ))}
+        </div>
+    </div>
+</div>
+  <ExploreOptions/>
+
 
     </>
   );
@@ -314,7 +454,7 @@ const Showcase = () => {
 
   return (
     <>
-    <div className="">
+    <div className="px-8 lg:pr-36">
 
       <nav className="bg-white border-b border-gray-300 shadow-md">
         <div className="max-w-5xl mx-auto px-4 py-2 flex items-center justify-around">
