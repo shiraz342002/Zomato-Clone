@@ -11,7 +11,6 @@ const ResturantPage = () => {
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
-
   return (
     <div>
       <nav className="bg-white border-b border-gray-300 shadow-md">
